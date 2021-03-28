@@ -1,0 +1,12 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+
+development:
+  <<: *default
+  database: toy_development
+
+test:
+  <<: *default
+  database: toy_test
+
